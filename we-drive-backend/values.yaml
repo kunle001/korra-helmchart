@@ -31,8 +31,8 @@ secretEnv:
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 80
+  port: 5050
+  targetPort: 5050
   nodePort: 30128
 
 imagePullSecrets:

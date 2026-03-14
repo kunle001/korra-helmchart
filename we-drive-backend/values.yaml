@@ -33,7 +33,7 @@ service:
   type: NodePort
   port: 80
   targetPort: 80
-  nodePort: 30122
+  nodePort: 30128
 
 imagePullSecrets:
   - acr-secret2

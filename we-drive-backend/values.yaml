@@ -1,0 +1,40 @@
+replicaCount: 1
+
+image:
+  repository: hqcbaregistry.azurecr.io/nvault-control-live
+  tag: "0662b90da2d2dec3ed00c58d188549b499f52c01"
+  pullPolicy: IfNotPresent
+
+env:
+  DATABASE_URL: "mongodb+srv://gidicart:korra_atkd1845@gidicart-cluster0.2qks9.mongodb.net/?appName=Gidicart-Cluster0"
+  JWT_SECRET: 39ehdne89yr390ru3rdnfr7uy4r92ejsjo9e8ie
+  NODE_ENV: development
+  PORT: 5050
+  REDIS_HOST: redis-15090.c85.us-east-1-2.ec2.cloud.redislabs.com
+  REDIS_PASSWORD: izVg1gZB9tvsioPMSuihG0Hw6MWlVd8k
+  REDIS_PORT: 15090
+  SRV: rdr
+
+secretEnv:
+  - name: NVAULT_GOOGLE_CRED
+    secretName: central-service
+    key: NVAULT_GOOGLE_CRED
+  - name: ETOKEN_APP_GOOGLE_CRED
+    secretName: central-service
+    key: ETOKEN_APP_GOOGLE_CRED
+  - name: WHATSAPP_ACCESS_TOKEN
+    secretName: central-service
+    key: WHATSAPP_ACCESS_TOKEN
+  - name: DB_URL
+    secretName: central-service
+    key: DB_URL
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30122
+
+imagePullSecrets:
+  - acr-secret2
+

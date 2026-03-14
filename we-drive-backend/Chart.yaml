@@ -1,0 +1,4 @@
+apiVersion: v2
+name: fze
+version: 0.1.0
+description: fze

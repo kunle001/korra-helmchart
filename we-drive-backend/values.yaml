@@ -10,9 +10,11 @@ env:
   JWT_SECRET: 39ehdne89yr390ru3rdnfr7uy4r92ejsjo9e8ie
   NODE_ENV: development
   PORT: 5050
-  REDIS_HOST: redis-15090.c85.us-east-1-2.ec2.cloud.redislabs.com
-  REDIS_PASSWORD: izVg1gZB9tvsioPMSuihG0Hw6MWlVd8k
-  REDIS_PORT: 15090
+  REDIS_HOST: 66.29.138.198
+  REDIS_PASSWORD: St3@dy911
+  REDIS_PORT: 30379
+  RABBITMQ_URL: amqp://neptune:St%403dy911@66.29.138.198:30672
+  BASE_URL: http://66.29.138.198:30128/
   SRV: rdr
 
 secretEnv:

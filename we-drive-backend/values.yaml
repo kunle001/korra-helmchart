@@ -14,6 +14,7 @@ env:
   REDIS_PASSWORD: izVg1gZB9tvsioPMSuihG0Hw6MWlVd8k
   REDIS_PORT: 15090
   SRV: rdr
+  RATE_LIMITING_ENABLED: "false"
 
 secretEnv:
   - name: NVAULT_GOOGLE_CRED

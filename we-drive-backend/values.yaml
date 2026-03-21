@@ -47,6 +47,9 @@ secretEnv:
   - name: RABBITMQ_URL
     secretName: control-live
     key: RABBITMQ_URL    
+  - name: GOOGLE_MAPS_API_KEY
+    secretName: control-live
+    key: GOOGLE_MAPS_API_KEY  
 
 
 service:

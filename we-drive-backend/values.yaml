@@ -18,6 +18,15 @@ env:
   CLOUDINARY_CLOUD_NAME: "dshfdqw0u"
   CLOUDINARY_API_KEY: "482198535485995"
   CLOUDINARY_API_SECRET: "o96gB6wD_wtAknq4xDZdRhVDP94"
+  USE_BREVO: "true"
+  BREVO_SMTP_HOST: smtp-relay.brevo.com
+  BREVO_SMTP_PORT: 587
+  BREVO_SMTP_USER: "783ad3001@smtp-brevo.com"
+  BREVO_SMTP_PASS: "xsmtpsib-ef5c43176b1d2768b95e77acec2c5e1ce0a68f2d9b676da35b8d4be81d75cca2-PEV5Fp6bVidqsLRC"
+  MAIL_FROM_NAME: "WeDrive"
+  MAIL_FROM_ADDRESS: "hq.wedrive@gmail.com"
+  TEST_EMAIL_TO: "temitopejulius9@gmail.com"
+  FIREBASE_SERVICE_ACCOUNT_PATH: "./wedrive-korra-firebase-adminsdk-fbsvc-6dfc2743c3.json"
 
 secretEnv:
   - name: NVAULT_GOOGLE_CRED

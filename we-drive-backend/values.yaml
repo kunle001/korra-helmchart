@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: hqcbaregistry.azurecr.io/nvault-control-live
-  tag: "0662b90da2d2dec3ed00c58d188549b499f52c01"
+  tag: "0a573fd61e021da939fd4ac1df93baf087204d4c"
   pullPolicy: IfNotPresent
 
 env:
@@ -16,6 +16,19 @@ env:
   RABBITMQ_URL: amqp://neptune:St%403dy911@66.29.138.198:30672
   BASE_URL: http://66.29.138.198:30128/
   SRV: rdr
+  RATE_LIMITING_ENABLED: "false"
+  CLOUDINARY_CLOUD_NAME: "dshfdqw0u"
+  CLOUDINARY_API_KEY: "482198535485995"
+  CLOUDINARY_API_SECRET: "o96gB6wD_wtAknq4xDZdRhVDP94"
+  USE_BREVO: "true"
+  BREVO_SMTP_HOST: smtp-relay.brevo.com
+  BREVO_SMTP_PORT: 587
+  BREVO_SMTP_USER: "783ad3001@smtp-brevo.com"
+  BREVO_SMTP_PASS: "xsmtpsib-ef5c43176b1d2768b95e77acec2c5e1ce0a68f2d9b676da35b8d4be81d75cca2-PEV5Fp6bVidqsLRC"
+  MAIL_FROM_NAME: "WeDrive"
+  MAIL_FROM_ADDRESS: "hq.wedrive@gmail.com"
+  TEST_EMAIL_TO: "temitopejulius9@gmail.com"
+  FIREBASE_SERVICE_ACCOUNT_PATH: "./wedrive-korra-firebase-adminsdk-fbsvc-6dfc2743c3.json"
 
 secretEnv:
   - name: NVAULT_GOOGLE_CRED
@@ -33,8 +46,8 @@ secretEnv:
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 80
+  port: 5050
+  targetPort: 5050
   nodePort: 30128
 
 imagePullSecrets:

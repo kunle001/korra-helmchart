@@ -10,7 +10,6 @@ env:
   PORT: 5050
   REDIS_HOST: "redis-15090.c85.us-east-1-2.ec2.cloud.redislabs.com"
   REDIS_PORT: 15090
-  RABBITMQ_URL: "amqp://neptune:St%403dy911@66.29.138.198:30672"
   BASE_URL: http://66.29.138.198:30128/
   SRV: rdr
   RATE_LIMITING_ENABLED: "false"
@@ -45,6 +44,9 @@ secretEnv:
   - name: JWT_SECRET
     secretName: control-live
     key: JWT_SECRET
+  - name: RABBITMQ_URL
+    secretName: control-live
+    key: RABBITMQ_URL    
 
 
 service:

@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: hqcbaregistry.azurecr.io/nvault-control-live
-  tag: "a67ec5badd52a1f5a0e65bb789e74ec0902426c8"
+  tag: "c34ebb87d40aa9a783b548ca303a182c2bded5fa"
   pullPolicy: IfNotPresent
 
 env:

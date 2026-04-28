@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: hqcbaregistry.azurecr.io/nvault-control-live
+  repository: harbor.neptunefbank.com/echannel/nvault-control-live
   tag: "b8c34028aef4286ba10c638b6956a4c807a848fd"
   pullPolicy: IfNotPresent
 
@@ -61,5 +61,5 @@ service:
   nodePort: 30128
 
 imagePullSecrets:
-  - acr-secret2
+  - harborsecret2
 

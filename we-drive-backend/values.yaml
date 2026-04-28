@@ -61,5 +61,5 @@ service:
   nodePort: 30128
 
 imagePullSecrets:
-  - harborsecret2
+  - harborsecret3
 

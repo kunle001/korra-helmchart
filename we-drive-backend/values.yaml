@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: harbor.neptunemfbank.com/echannel/nvault-control-live
-  tag: "826d82f1100e696b76eea35d8c223dfca8d1038c"
+  tag: "efb59894b3cbee29e585224b045d489bc8081e74"
   pullPolicy: IfNotPresent
 
 env:

@@ -23,6 +23,12 @@ env:
   FIREBASE_SERVICE_ACCOUNT_PATH: "./wedrive-korra-firebase-adminsdk-fbsvc-6dfc2743c3.json"
   KRELTIX_BASE_URL: "https://kreltix.com/api/v1"
   KRELTIX_API_KEY: "sk_NdajtAM_al2VnfQdggt9LQS9Fr7UbDizNs9SP6ZGT_g"
+  LIVEKIT_URL: wss://wedrive-l0iea78l.livekit.cloud
+  LIVEKIT_API_KEY: APImFyoeabbX6N4
+  LIVEKIT_API_SECRET: sifblzi1UoO5NpCd66fKtHg823f2YZJIQrcdQ8XryR6A
+  LIVEKIT_URL: wss://wedrive-l0iea78l.livekit.cloud
+  LIVEKIT_API_KEY: APImFyoeabbX6N4
+  LIVEKIT_API_SECRET: sifblzi1UoO5NpCd66fKtHg823f2YZJIQrcdQ8XryR6A
 
 secretEnv:
   - name: BREVO_SMTP_PASS
